@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area Calculator</title>
+  <link rel="stylesheet" href="area_calculator.css">
+  <script src="area_calculator.js" defer></script>
+</head>
+<body>
+  <div class="tab">
+    <h1 class="title">Area Calculator</h1>
+    <button class="tablinks" onclick="openCalculator(event, 'Rectangle/Square')" id="defaultOpen">Rectangle/Square</button>
+    <button class="tablinks" onclick="openCalculator(event, 'Triangle')">Triangle</button>
+    <button class="tablinks" onclick="openCalculator(event, 'Circle')">Circle</button>
+  </div>
+
+  <!-- Rectangle area --><!-- I changed the wrapper class from the youtube into the tabcontent class-->
+  <div id = "Rectangle/Square" class="tabcontent">
+    <p>Height:
+      <input type="text" id="height"><br><span id="height_error"></span>
+    </p>
+    <p>&nbsp;</p>
+    <p>Width:
+      <input type="text" id="width"><br><span id="width_error"></span>
+    </p>
+    <p>&nbsp;</p>
+    <button id="btn_rectangle">Calculate</button>
+    <p>&nbsp;</p>
+    <p id="output"></p>
+  </div>
+
+  <!--Triangle-->
+  <div id = "Triangle" class="tabcontent">
+    <p>Height:
+      <input type="text" id="height_triangle"><br><span id="height_triangle_error"></span>
+    </p>
+    <p>&nbsp;</p>
+    <p>Base:
+      <input type="text" id="base"><br><span id="base_error"></span>
+    </p>
+    <p>&nbsp;</p>
+    <button id="btn_triangle">Calculate</button>
+    <p>&nbsp;</p>
+    <p id="output_triangle"></p>
+  </div>
+
+  <!--Circle-->
+  <div id = "Circle" class="tabcontent">
+    <p>Radius:
+      <input type="text" id="radius"><br><span id="radius_error"></span>
+    </p>
+    <p>&nbsp;</p>
+    <button id="btn_circle">Calculate</button>
+    <p>&nbsp;</p>
+    <p id="output_circle"></p>
+  </div>
+</body>
+</html>
